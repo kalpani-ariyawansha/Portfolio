@@ -291,4 +291,10 @@
       }
     }
   }
+  @media (max-width: 768px) {
+    .navbar {
+        display: none; /* Hides the navbar on mobile devices */
+    }
+}
+
 }
