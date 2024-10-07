@@ -8368,6 +8368,14 @@ h1, h2, h3, h4, h5,
   font-size: 24px;
   text-transform: uppercase; }
 
+.hero {
+  pointer-events: none;
+}
+
+.btn {
+  pointer-events: all;
+}
+
 .hero h3.vr {
   -webkit-writing-mode: vertical-lr;
   -ms-writing-mode: tb-lr;
