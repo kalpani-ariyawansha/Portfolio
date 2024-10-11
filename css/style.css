@@ -8368,14 +8368,6 @@ h1, h2, h3, h4, h5,
   font-size: 24px;
   text-transform: uppercase; }
 
-.hero {
-  pointer-events: none;
-}
-
-.btn {
-  pointer-events: all;
-}
-
 .hero h3.vr {
   -webkit-writing-mode: vertical-lr;
   -ms-writing-mode: tb-lr;
@@ -9309,37 +9301,70 @@ textarea.form-control {
   height: 350px; }
 
 .blog-entry {
-  position: relative; }
-  @media (min-width: 768px) {
-    .blog-entry {
-      margin-bottom: 30px; } }
-  @media (max-width: 767.98px) {
-    .blog-entry {
-      margin-bottom: 30px; } }
-  .blog-entry .text {
-    width: 100%;
-    margin: 0 auto; }
-    .blog-entry .text .heading {
-      font-size: 20px;
-      margin-bottom: 16px;
-      font-weight: 500; }
-      .blog-entry .text .heading a {
-        color: #fff; }
-        .blog-entry .text .heading a:hover, .blog-entry .text .heading a:focus, .blog-entry .text .heading a:active {
-          color: #ffbd39; }
-  .blog-entry .meta {
-    display: inline-block;
-    margin-right: 5px;
-    margin-bottom: 0;
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 2px; }
-    .blog-entry .meta span {
-      color: #ffbd39; }
-    .blog-entry .meta a {
-      color: #ffbd39; }
-      .blog-entry .meta a:hover {
-        color: #ffbd39; }
+  position: relative;
+  margin: 0 auto; /* Centers the blog entry */
+}
+
+@media (min-width: 768px) {
+  .blog-entry {
+    margin-bottom: 30px;
+    max-width: 600px; /* Adjust this value to control the width */
+  }
+}
+
+@media (max-width: 767.98px) {
+  .blog-entry {
+    margin-bottom: 30px;
+    max-width: 100%; /* Full width on small screens */
+  }
+}
+
+.blog-entry .text {
+  width: 100%;
+  margin: 0 auto;
+  text-align: justify; /* Justify the paragraphs */
+}
+
+.blog-entry .text .heading {
+  font-size: 20px;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.blog-entry .text .heading a {
+  color: #fff;
+}
+
+.blog-entry .text .heading a:hover,
+.blog-entry .text .heading a:focus,
+.blog-entry .text .heading a:active {
+  color: #ffbd39;
+}
+
+.blog-entry .meta {
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 0;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.blog-entry .meta span {
+  color: #ffbd39;
+}
+
+.blog-entry .meta a {
+  color: #ffbd39;
+}
+
+.blog-entry .meta a:hover {
+  color: #ffbd39;
+}
+
+.text p {
+  text-align: justify; /* Ensures paragraphs are justified */
+}
 
 .block-23 ul {
   padding: 0; }
@@ -9690,3 +9715,4 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
