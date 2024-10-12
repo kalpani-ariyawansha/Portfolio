@@ -9685,6 +9685,40 @@ textarea.form-control {
   -webkit-animation: loader-dash 1.5s ease-in-out infinite;
   animation: loader-dash 1.5s ease-in-out infinite;
   stroke-linecap: round; }
+  /* Container for the skills */
+.skills-container {
+  display: grid; /* Use grid layout */
+  grid-template-columns: repeat(5, 1fr); /* 5 equal columns on desktop */
+  grid-template-rows: repeat(2, auto); /* 2 rows for skills on desktop */
+  gap: 20px; /* Space between items */
+}
+
+/* Individual skill item styling */
+.skill-item {
+  text-align: center; /* Center the content inside each skill item */
+  margin: 20px 0; /* Vertical margin for spacing */
+}
+
+/* Styling for the SVG icon */
+.skill-item svg {
+  width: 80px; /* Width of the SVG icon */
+  height: 80px; /* Height of the SVG icon */
+}
+
+/* Styling for the skill name */
+.skill-item h3 {
+  margin-top: 10px; /* Space above the skill name */
+  font-size: 1.2em; /* Font size for skill name */
+}
+
+/* Mobile view styling */
+@media (max-width: 768px) {
+  .skills-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 equal columns on mobile */
+      grid-template-rows: repeat(5, auto); /* 5 rows on mobile */
+  }
+}
+
 
 @-webkit-keyframes loader-rotate {
   100% {
